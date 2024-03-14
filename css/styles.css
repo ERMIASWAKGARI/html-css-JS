@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: Set your preferred font family */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.section {
+  flex: 1;
+  margin-bottom: 20px;
+  /* margin-right: 20px; */
+  padding: 20px;
+  border: 1px solid #000;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.section h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff9900; /* Unique color for section title region */
+  color: #fff; /* Adjust text color for better readability */
+  padding: 5px 10px;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    flex-basis: 48%; /* Adjust section width for tablet view */
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    flex-basis: 100%; /* Full width for mobile view */
+  }
+}
